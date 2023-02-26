@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | WatchTv</title>
+    <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon" />
+    <!-- ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- STYLE -->
+    <link rel="stylesheet" href="./assets/css/profile.css">
+</head>
+<body>
+    <div class="profile-area">
+        <div class="imgBx">
+            <img src="./assets/img/profile.JPG" alt="">
+        </div>
+        <div class="about">
+            <h3 class="fullname">Baba Ibrahimov</h3>
+            <h4 class="username">@babaibrahimovv</h4>
+            <button id="change-profile">Change Profile Photo</button>
+            <button id="change-password">Change Password</button>
+            <button id="logout"><i class="ri-logout-box-line"></i> Log out</button>
+        </div>
+        <div class="items">
+            <div class="item active" id="liked-movies"><i class="ri-thumb-up-fill"></i>Liked</div>
+            <div class="item" id="saved-movies"><i class="ri-bookmark-fill"></i>Saved</div>
+            <div class="item" id="download-movies"><i class="ri-download-cloud-2-fill"></i>Downloaded</div>
+        </div>
+        <div class="change-profile-area">
+            <input type="file">
+            <i class="ri-check-fill" id="save-profile"></i>
+            <i class="ri-close-fill" id="close-profile"></i>
+        </div>
+        <div class="change-password-area">
+            <i class="ri-close-fill" id="close-password"></i>
+            <h3>Change Password</h3>
+            <input type="password" placeholder="Current Password" name="current-password" id="current-password">
+            <input type="password" placeholder="New Password" name="new-password" id="new-password">
+            <input type="password" placeholder="Confirm New Password" name="confirm-new-password" id="confirm-new-password">
+            <input type="submit" value="Change Password" name="change-password" id="save-password">
+        </div>
+    </div>
+    <div class="content">
+        <div class="main">
+            <div class="liked-area active">
+                <div class="title">Liked Movies<i class="ri-thumb-up-fill"></i></div>
+                <div class="movies">
+                    <div class="movie">
+                        <a href="./movie.html">
+                            <img src="./assets/img/movies/movie-1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="movie">
+                        <img src="./assets/img/comedi-7.jpg" alt="">
+                    </div>
+                    <div class="movie">
+                        <img src="./assets/img/comedi-1.jpg" alt="">
+                    </div>
+                    <div class="movie">
+                        <img src="./assets/img/for-childrens-4.jpg" alt="">
+                    </div>
+                    <div class="movie">
+                        <img src="./assets/img/for-childrens-7.jpg" alt="">
+                    </div>
+                    <div class="movie">
+                        <img src="./assets/img/sport-5.png" alt="">
+                    </div>
+                    <div class="movie">
+                        <img src="./assets/img/sport-7.jpg" alt="">
+                    </div>
+                    <div class="movie">
+                        <img src="./assets/img/suggestions-3.webp" alt="">
+                    </div>
+                    <div class="movie">
+                        <img src="./assets/img/movies/movie-14.jpg" alt="">
+                    </div>
+                    <div class="movie">
+                        <img src="./assets/img/movies/movie-26.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="saved-area">
+                <div class="title">Saved Movies<i class="ri-bookmark-fill"></i></div>
+                <div class="movies">
+                    <div class="movie">
+                        <img src="./assets/img/for-childrens-7.jpg" alt="">
+                    </div>
+                    <div class="movie">
+                        <img src="./assets/img/comedi-8.jpg" alt="">
+                    </div>
+                    <div class="movie">
+                        <img src="./assets/img/sport-3.jpg" alt="">
+                    </div>
+                    <div class="movie">
+                        <img src="./assets/img/suggestions-8.jpg" alt="">
+                    </div>
+                    <div class="movie">
+                        <img src="./assets/img/movies/movie-19.jpg" alt="">
+                    </div>
+                    <div class="movie">
+                        <img src="./assets/img/sport-1.jpg" alt="">
+                    </div>
+                    <div class="movie">
+                        <img src="./assets/img/sport-7.jpg" alt="">
+                    </div>
+                    <div class="movie">
+                        <img src="./assets/img/suggestions-1.jpg" alt="">
+                    </div>
+                    <div class="movie">
+                        <img src="./assets/img/movies/movie-8.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="download-area">
+                <div class="title">Downloaded Movies<i class="ri-download-cloud-2-fill"></i></div>
+                <div class="movies">
+                    <div class="movie">
+                        <img src="./assets/img/movies/movie-11.jpg" alt="">
+                    </div>
+                    <div class="movie">
+                        <img src="./assets/img/suggestions-4.jpg" alt="">
+                    </div>
+                    <div class="movie">
+                        <img src="./assets/img/movies/movie-32.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="./assets/javascript/profile.js"></script>
+    </body>
+</html>

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+body
+{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/img/register-background.jpeg);
+}
+
+.form
+{
+    max-width: 800px;
+    width: 100%;
+    padding: 20px 10px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: rgba(255, 255, 255, .9);
+}
+
+.form .inputBx
+{
+    position: relative;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.form .inputBx input
+{
+    width: 100%;
+    background: #fff;
+    border: none;
+    outline: none;
+    padding: 25px 10px 7.5px;
+    border-radius: 4px;
+    color: #000;
+    font-weight: 500;
+    font-size: 1em;
+    border: 1px solid #777;
+}
+
+.form .inputBx span
+{
+    position: absolute;
+    left: 0;
+    padding: 15px 10px;
+    font-style: normal;
+    color: #aaa;
+    transition: .5s;
+    pointer-events: none;
+}
+
+.form form .inputBx input:focus ~ span,
+.form form .inputBx input:valid ~ span
+{
+    transform: translateY(-7.5px);
+    font-size: .8em;
+    /* color: #aaa; */
+    color: orangered;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title
+{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: orangered;
+}
+
+.form form .submitBx
+{
+    position: relative;
+    width: 100%;
+}
+
+.form form .submitBx input
+{
+    /* width: 100%; */
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    background: orangered;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form form .submitBx input:hover
+{
+    background: rgb(241, 87, 31);
+}
+
+
+.form form .links
+{
+    display: flex;
+    margin-left: auto;
+}
+
+.form form .links a
+{
+    font-weight: 700;
+    margin-left: 4px;
+    color: orangered;
+}
+
+#eye, #eye-confirm
+{
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: #aaa;
+    font-weight: 400;
+}
+
+@media (max-width: 830px)
+{
+    body
+    {
+        padding: 0px 15px;
+    }
+    .title
+    {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 430px)
+{
+    .title
+    {
+        text-align: center;
+        font-size: 1.4rem;
+    }
+}
