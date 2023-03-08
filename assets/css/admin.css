@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+body
+{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(252deg, #59ebb7, #9acf99);
+}
+
+.wrapper
+{
+    max-width: 900px;
+    width: 100%;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 12px;
+}
+
+.wrapper .imgBx
+{
+    width: 240px;
+    height: 240px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.wrapper .imgBx i
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    font-weight: 200;
+    border-radius: 100%;
+    color: #fff;
+    border: 3px solid #fff;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 100001;
+}
+
+
+.wrapper .imgBx:hover i
+{
+    transition: .3s;
+    opacity: 1;
+}
+
+.wrapper .imgBx:hover img
+{
+    transition: .3s;
+    filter: blur(2px);
+}
+
+
+
+.wrapper .imgBx img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wrapper button
+{
+    max-width: 300px;
+    width: 100%;
+    margin-top: 6px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    padding: 6px 10px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+}
+
+.wrapper button i
+{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-right: 6px;
+}
+
+#change_password{background: #3adef7;}
+#add_movie{background: #60e757;}
+#edit_movie{background: #60e757;}
+#see_users{background: #60e757;}
+#visit{background: #55b7fd;}
+#logout{background: rgb(175, 167, 167);}
