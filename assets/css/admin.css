@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 *
 {
@@ -42,6 +43,7 @@ body
     border-radius: 100%;
     overflow: hidden;
     position: relative;
+    border: 1px solid #bfbfbf;
 }
 
 .wrapper .imgBx i
@@ -144,4 +146,94 @@ body
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.add-movie-section h2
+{
+    font-size: 26px;
+    font-weight: 400;
+    color: #ff4500;
+}
+
+.add-movie-section form
+{
+    width: 100%;
+}
+
+.add-movie-section form input
+{
+    display: block;
+    width: 100%;
+    outline: none;
+    border: 1px solid #bfbfbf;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    padding: 4px;
+    margin-bottom: 6px;
+}
+
+.add-movie-section form textarea
+{
+    display: block;
+    width: 100%;
+    resize: none;
+    margin-bottom: 6px;
+    outline: none;
+    border: 1px solid #bfbfbf;
+    padding: 4px;
+    font-size: 1rem;
+    height: 100px;
+}
+
+.add-movie-section form input:focus
+{
+    border-color: #333;
+    background: #f3f0f0;
+}
+
+.add-movie-section form textarea:focus
+{
+    border-color: #333;
+    background: #f3f0f0;
+}
+
+.add-movie-section form label
+{
+    margin-top: 5px;
+    color: #000;
+}
+
+.add-movie-section form button
+{
+    width: 200px;
+    font-size: 1rem;
+    padding: 6px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.add-movie-section form button[type="submit"]
+{
+    background: #14f703;
+}
+
+.add-movie-section form button[type="submit"]:hover
+{
+    background: #38f72b;
+}
+
+.add-movie-section form button[type="reset"]
+{
+    background: rgb(255, 66, 255);
+}
+
+.add-movie-section form button[type="reset"]:hover
+{
+    background: rgb(255, 85, 255);
 }

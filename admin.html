@@ -34,7 +34,7 @@
                     <input type="text" placeholder="author" name="author">
                 </div>
                 <div class="textBx">
-                    <textarea name="about"></textarea>
+                    <textarea name="about" placeholder="About Movie"></textarea>
                 </div>
                 <div class="inputBx">
                     <input type="text" placeholder="Date">
@@ -42,15 +42,21 @@
                 <div class="inputBx">
                     <input type="text" placeholder="IMDB raiting">
                 </div>
+                <label for="cover-image">Cover Image</label>
                 <div class="inputBx">
-                    <input type="file" placeholder="cover image">
+                    <input type="file" name="cover-image" placeholder="cover image">
                 </div>
+                <label for="video-source">Video Source</label>
                 <div class="inputBx">
-                    <input type="file" placeholder="Video">
+                    <input type="file" placeholder="Video" name="video-source">
                 </div>
+                <label for="trailer">Trailer</label>
                 <div class="inputBx">
-                    <input type="file" placeholder="Trailer">
+                    <input type="file" placeholder="Trailer" name="trailer">
                 </div>
+
+                <button type="submit" id="save-movie">Save</button>
+                <button type="reset" id="reset-movie">Reset</button>
 
             </form>
         </div>
